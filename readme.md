@@ -1,0 +1,1 @@
+Welcome to Line comparison program.
