@@ -2,22 +2,6 @@ package com.bridgelabz;
 import java.util.*;
 
 public class LineComparison {
-    static void calculateLength(int x11,int y11,int x12,int y12,int x21,int y21,int x22,int y22){
-
-        double line1Length = Math.sqrt(Math.pow(x12-x11,2)+Math.pow(y12-y11,2));
-        System.out.println(line1Length);
-        double line2Length = Math.sqrt(Math.pow(x22-x21,2)+Math.pow(y22-y21,2));
-        System.out.println(line2Length);
-        if (line1Length == line2Length){
-            System.out.println("Line 1 length is equal to Line 2 length");
-        }
-        else {
-            System.out.println("Line 1 length is not equal to Line 2 length");
-        }
-
-
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Line1 x11 co-ordinate");
@@ -36,8 +20,19 @@ public class LineComparison {
         int x22 = sc.nextInt();
         System.out.println("Enter Line2 y22 co-ordinate");
         int y22 = sc.nextInt();
-        calculateLength(x11,y11,x12,y12,x21,y21,x22,y22);
+        double line1Length = Math.sqrt(Math.pow(x12-x11,2)+Math.pow(y12-y11,2));
+        double line2Length = Math.sqrt(Math.pow(x22-x21,2)+Math.pow(y22-y21,2));
+        System.out.println("Length of line 1 : "+ line1Length);
+        System.out.println("Length of line 2 : "+ line2Length);
+        Double res1 = line1Length;
+        Double res2 = line2Length;
 
+        if ( res1.equals(res2)==true){
+            System.out.println("Line 1 length is equal to Line 2 length");
+        }
+        else {
+            System.out.println("Line 1 length is not equal to Line 2 length");
+        }
     }
 
 }
