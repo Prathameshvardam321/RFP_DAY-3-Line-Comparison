@@ -1,5 +1,5 @@
 package com.bridgelabz;
-import java.util.*;
+import java.util.Scanner;
 
 public class LineComparison {
 
