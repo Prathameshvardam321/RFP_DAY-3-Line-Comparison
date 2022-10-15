@@ -1,5 +1,5 @@
 package com.bridgelabz;
-import java.util.*;
+import java.util.Scanner;
 
 public class LineComparison {
     static void calculateLength(double x11,double y11,double x12,double y12,double x21,double y21,double x22,double y22){
