@@ -21,22 +21,22 @@ public class Line {
        Double lineLength2 = line2.getLengthOfLine();
        System.out.println("Length of line 1 is : "+lineLength1);
        System.out.println("Length of line 2 is : "+lineLength2);
-       if (lineLength1.equals(lineLength2)){
-           System.out.println("Line 1 and Line 2 are equal.");
-       }else {
-           System.out.println("Line 1 and Line 2 are not equal.");
-       }
-
-   }
-    public static void compareByEqualsToMethod(Line line1,Line line2){
-        Double lineLength1 = line1.getLengthOfLine();
-        Double lineLength2 = line2.getLengthOfLine();
-       if (lineLength1.compareTo(lineLength2)==0){
+        if (lineLength1.compareTo(lineLength2)==0){
            System.out.println("Line 1 and Line 2 are equal.");
        } else if (lineLength1.compareTo(lineLength2)==1) {
            System.out.println("Line 1 is greater than Line 2.");
        }else {
            System.out.println("Line 1 is lesser than Line 2.");
        }
+   }
+    public static void compareByEqualsToMethod(Line line1,Line line2){
+        Double lineLength1 = line1.getLengthOfLine();
+        Double lineLength2 = line2.getLengthOfLine();
+        if (lineLength1.equals(lineLength2)){
+           System.out.println("Line 1 and Line 2 are equal.");
+       }else {
+           System.out.println("Line 1 and Line 2 are not equal.");
+       }
+
     }
 }
